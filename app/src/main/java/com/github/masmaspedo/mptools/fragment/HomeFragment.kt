@@ -1,11 +1,16 @@
 package com.github.masmaspedo.mptools.fragment
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.github.masmaspedo.mptools.R
+import android.os.Build
+import androidx.annotation.RequiresApi
+import com.topjohnwu.superuser.Shell
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,8 +41,31 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val v : View =  inflater.inflate(R.layout.fragment_home, container, false)
-
+        getDeviceInfo(v)
         return v
+    }
+
+    fun getDeviceInfo(view : View){
+        val devices : TextView = view.findViewById(R.id.fhome_device_name)
+        val osver : TextView = view.findViewById(R.id.fhome_device_os_version)
+        val roms : TextView = view.findViewById(R.id.fhome_device_rom)
+        val kernel : TextView = view.findViewById(R.id.fhome_device_kernel)
+        val rooted : TextView = view.findViewById(R.id.fhome_device_rooted)
+        val version : TextView = view.findViewById(R.id.fhome_device_app_version)
+        val infos = context?.let { activity?.packageManager?.getPackageInfo(it.packageName,0)}
+        devices.setText(Build.MANUFACTURER.toString()+" "+Build.MODEL.toString())
+        osver.setText(Build.VERSION.RELEASE)
+        roms.setText(Build.DISPLAY.toString())
+        kernel.setText(System.getProperty("os.version"))
+        if(Shell.rootAccess()){
+            rooted.setText("True")
+            rooted.setTextColor(Color.parseColor("#17E64E"))
+        }else {
+            rooted.setText("False")
+            rooted.setTextColor(Color.parseColor("#E61717"))
+        }
+        version.setText(infos?.versionName.toString())
+
     }
 
     companion object {

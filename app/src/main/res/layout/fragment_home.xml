@@ -36,10 +36,150 @@
                 android:layout_height="match_parent">
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="wrap_content"
                     style="@style/Theme.MPTools.CardView"
-                    >
 
+                    >
+                    <LinearLayout
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Device Information"
+                            android:textSize="18dp"
+                            android:textFontWeight="600"
+                            android:textColor="?android:colorPrimary"
+                            android:layout_marginBottom="10dp"
+                            />
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Theme.MPTools.TextMuted"
+                                android:layout_alignParentStart="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Device :"
+                                />
+                            <TextView
+                                style="@style/Theme.MPTools.TextHightlight"
+                                android:id="@+id/fhome_device_name"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Theme.MPTools.TextMuted"
+                                android:layout_alignParentStart="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OS Version :"
+                                />
+                            <TextView
+                                android:id="@+id/fhome_device_os_version"
+                                style="@style/Theme.MPTools.TextHightlight"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Theme.MPTools.TextMuted"
+                                android:layout_alignParentStart="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ROM :"
+                                />
+                            <TextView
+                                android:id="@+id/fhome_device_rom"
+                                style="@style/Theme.MPTools.TextHightlight"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Theme.MPTools.TextMuted"
+                                android:layout_alignParentStart="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kernel :"
+                                />
+                            <TextView
+                                android:id="@+id/fhome_device_kernel"
+                                style="@style/Theme.MPTools.TextHightlight"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Theme.MPTools.TextMuted"
+                                android:layout_alignParentStart="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rooted :"
+                                />
+                            <TextView
+                                android:id="@+id/fhome_device_rooted"
+                                style="@style/Theme.MPTools.TextHightlight"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                style="@style/Theme.MPTools.TextMuted"
+                                android:layout_alignParentStart="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MPTools Version :"
+                                />
+                            <TextView
+                                android:id="@+id/fhome_device_app_version"
+                                style="@style/Theme.MPTools.TextHightlight"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"

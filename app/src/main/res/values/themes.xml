@@ -18,4 +18,10 @@
         <item name="android:elevation">40dp</item>
         <item name="android:layout_marginBottom">25dp</item>
     </style>
+    <style name="Theme.MPTools.TextMuted" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white_textMuted</item>
+    </style>
+    <style name="Theme.MPTools.TextHightlight" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>

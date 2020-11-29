@@ -8,5 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_pudar">#63D6D6D6</color>
-    <color name="bg_white">#97F7F8FF</color>
+    <color name="bg_white">#97EEF0FF</color>
+    <color name="white_textMuted">#919191</color>
+    <color name="dark_textMuted">#595959</color>
 </resources>

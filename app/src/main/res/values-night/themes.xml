@@ -6,8 +6,17 @@
     <style name="Theme.MPTools.AppBar" parent="Widget.MaterialComponents.Toolbar">
         <item name="android:fitsSystemWindows">true</item>
     </style>
+    <style name="Theme.MPTools.FrameLayout">
+
+    </style>
     <style name="Theme.MPTools.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="android:elevation">40dp</item>
         <item name="android:layout_marginBottom">25dp</item>
+    </style>
+    <style name="Theme.MPTools.TextMuted" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/dark_textMuted</item>
+    </style>
+    <style name="Theme.MPTools.TextHightlight" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>
