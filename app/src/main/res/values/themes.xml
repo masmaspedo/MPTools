@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MPTools" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:colorPrimary">@color/purple_200</item>
+        <item name="colorOnPrimary">@color/purple_200</item>
+    </style>
+    <style name="Theme.MPTools.AppBar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">50dp</item>
+        <item name="elevationOverlayEnabled">true</item>
+    </style>
+    <style name="Theme.MPTools.FrameLayout">
+        <item name="android:background">@color/bg_white</item>
+    </style>
+    <style name="Theme.MPTools.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:elevation">40dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+    </style>
+</resources>

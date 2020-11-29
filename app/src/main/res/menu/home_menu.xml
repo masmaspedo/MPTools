@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fhome_reboot"
+        android:title="Reboot"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fhome_recovery"
+        android:title="Reboot to Recovery"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fhome_bootloader"
+        android:title="Reboot to Bootloader"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fhome_shutdown"
+        android:title="Shutdown"
+        app:showAsAction="never" />
+</menu>
